@@ -42,14 +42,16 @@ const HeaderBottom = () => {
             >
               Category
             </h3>
-            <span
-              className={`${
-                selectedCategory?.label === category.label
-                  ? "text_gradient"
-                  : "text-white"
-              }`}
-            >
-              {category.label}
+            <span className="px-[10px] py-[3px] bg-[#220E2D] rounded-[8px] border-[2px] border-[#432755]">
+              <span
+                className={`${
+                  selectedCategory?.label === category.label
+                    ? "text_gradient"
+                    : "text-white"
+                }`}
+              >
+                {category.label}
+              </span>
             </span>
           </div>
         ))}

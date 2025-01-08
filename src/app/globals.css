@@ -18,3 +18,12 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.radial {
+  border-radius: 1604px;
+  background: radial-gradient(
+    59.69% 59.69% at 50% 40.31%,
+    #d9d9d9 48.22%,
+    rgba(217, 217, 217, 0) 65.49%
+  );
+}
