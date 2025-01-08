@@ -1,10 +1,8 @@
+import { IProduct } from "@/mock/product";
+
 export interface ISubCategory {
   label: string;
-  products: {
-    label: string;
-    price: number;
-    image: string;
-  }[];
+  products: Pick<IProduct, "productName" | "suggestedPrice" | "image">[];
 }
 
 export interface ICategory {

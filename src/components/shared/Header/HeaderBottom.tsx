@@ -84,7 +84,7 @@ const HeaderBottom = () => {
                     <div className="w-[115px] h-[73.143px] bg-[#1C0829] rounded-[14.69px]">
                       <Image
                         src={product.image}
-                        alt={product.label}
+                        alt={product.productName}
                         width={115}
                         height={73}
                         className="object-contain w-full h-full"
@@ -93,11 +93,11 @@ const HeaderBottom = () => {
 
                     <div className="flex flex-col">
                       <h4 className="text-secondary font-[500] tracking-[-0.09px] leading-[121.905%]">
-                        {product.label}
+                        {product.productName}
                       </h4>
 
                       <p className="text-[14px] text-secondary/30 font-[500] tracking-[-0.78px] leading-[140.659%]">
-                        From ${product.price.toFixed(2)}
+                        From ${product.suggestedPrice.toFixed(2)}
                       </p>
                     </div>
                   </div>

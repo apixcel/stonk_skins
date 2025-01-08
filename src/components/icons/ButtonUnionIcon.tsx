@@ -35,8 +35,8 @@ const ButtonUnionIcon = ({ ...props }) => {
           y2="25.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E9AD83" />
-          <stop offset="1" stop-color="#9B1FE8" />
+          <stop stopColor="#E9AD83" />
+          <stop offset="1" stopColor="#9B1FE8" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_0_399"
@@ -46,8 +46,8 @@ const ButtonUnionIcon = ({ ...props }) => {
           y2="51"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#BEBEBE" />
-          <stop offset="0.84" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#BEBEBE" />
+          <stop offset="0.84" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_0_399"
@@ -57,8 +57,8 @@ const ButtonUnionIcon = ({ ...props }) => {
           y2="51"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
