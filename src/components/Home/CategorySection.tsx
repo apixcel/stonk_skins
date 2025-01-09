@@ -65,11 +65,7 @@ const CategorySection: React.FC<IProps> = ({
             spaceBetween: 20,
           },
           1300: {
-            slidesPerView: 4,
-            spaceBetween: 20,
-          },
-          1850: {
-            slidesPerView: 5,
+            slidesPerView: 3.8,
             spaceBetween: 20,
           },
         }}

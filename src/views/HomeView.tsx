@@ -1,11 +1,12 @@
 import Banner from "@/components/Home/Banner";
 import CategorySection from "@/components/Home/CategorySection";
+import HowItWorks from "@/components/Home/HowItWorks";
 import { categoryBaseProducts } from "@/mock/category";
 import Image from "next/image";
 
 const HomeView = () => {
   return (
-    <main className="bg-[#220c30] w-full overflow-x-hidden">
+    <main className="bg-[#220c30] w-full overflow-x-hidden  max-w-[1440px] mx-auto">
       <Banner />
       <div className="mt-[115px] relative">
         <span className="w-[437px] aspect-square rounded-full glowGradient absolute top-[30%] left-[-137px] z-[1]" />
@@ -43,6 +44,8 @@ const HomeView = () => {
           />
         </div>
       </div>
+
+      <HowItWorks />
     </main>
   );
 };
