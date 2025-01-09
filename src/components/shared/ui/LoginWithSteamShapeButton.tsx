@@ -1,10 +1,11 @@
 import ArrowAngelUp from "@/components/icons/ArrowAngelUp";
 import fonts from "@/fonts";
-
-const LoginWithSteamShapeButton = ({className}: {className?: string}) => {
+const LoginWithSteamShapeButton = ({ className }: { className?: string }) => {
   return (
     <button
-      className={`relative w-[245px] h-[52px] text-secondary font-[500] text-[16px] leading-[125%] tracking-[-0.096px] ${fonts.dm_sans.className} ${className||""}`}
+      className={`relative w-[245px] h-[52px] text-secondary font-[500] text-[16px] leading-[125%] tracking-[-0.096px] ${
+        fonts.dm_sans.className
+      } ${className || ""}`}
     >
       <span className="relative z-[2] flex items-center justify-between w-full h-full pl-[34px]">
         Login with Steam

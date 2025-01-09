@@ -11,7 +11,7 @@ export default {
     extend: {
       colors: {
         secondary: "#F5F5F5",
-
+        secondaryBg: "#ffffff0f",
         borderPrimary: "#43344c8c",
       },
     },

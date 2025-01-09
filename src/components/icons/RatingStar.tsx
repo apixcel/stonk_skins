@@ -14,7 +14,7 @@ const RatingStar = () => {
       <path
         d="M7 11.1761L10.0417 10.3616L11.3125 14.5L7 11.1761ZM14 5.82704H8.64583L7 0.5L5.35417 5.82704H0L4.33334 9.12893L2.6875 14.456L7.02083 11.1541L9.6875 9.12893L14 5.82704Z"
         fill="url(#paint1_linear_344_28)"
-        fill-opacity="0.15"
+        fillOpacity="0.15"
       />
       <defs>
         <linearGradient

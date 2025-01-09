@@ -1,6 +1,8 @@
 import Banner from "@/components/Home/Banner";
 import CategorySection from "@/components/Home/CategorySection";
+import Faq from "@/components/Home/Faq";
 import HowItWorks from "@/components/Home/HowItWorks";
+import StartTrading from "@/components/Home/StartTrading";
 import Testimonials from "@/components/Home/Testimonials";
 import { categoryBaseProducts } from "@/mock/category";
 import Image from "next/image";
@@ -47,6 +49,8 @@ const HomeView = () => {
       </div>
       <HowItWorks />
       <Testimonials />
+      <Faq />
+      <StartTrading />
     </main>
   );
 };

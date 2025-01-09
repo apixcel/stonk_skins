@@ -31,7 +31,7 @@ const Banner = () => {
           <LoginWithSteamShapeButton className="mt-[57px]" />
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full border-x-[1px] border-t-[1px] border-borderPrimary backdrop-blur-[25px] bg-[#FFFFFF0F] px-[32px] py-[28px] flex items-center justify-start gap-[70px] z-[50] rounded-[24px]">
+        <div className="absolute bottom-0 left-0 w-full border-x-[1px] border-t-[1px] border-borderPrimary backdrop-blur-[25px] bg-secondaryBg px-[32px] py-[28px] flex items-center justify-start gap-[70px] z-[50] rounded-[24px]">
           {serviceData.map(({ Icon, label }, i) => (
             <div
               key={i + label}
