@@ -18,3 +18,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.glowGradient {
+  background: linear-gradient(90deg, #e9ad83 0%, #9b1fe8 100%);
+  filter: blur(75px);
+}
