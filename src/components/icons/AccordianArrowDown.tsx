@@ -24,7 +24,7 @@ const AccordianArrowDown = () => {
         rx="18.25"
         transform="rotate(90 48.25 0.75)"
         stroke="url(#paint1_linear_0_825)"
-        stroke-opacity="0.34"
+        strokeOpacity="0.34"
         stroke-width="1.5"
       />
       <path

@@ -32,7 +32,7 @@ const AccordianArrowUp = () => {
         rx="18.25"
         transform="rotate(-90 0.75 48.25)"
         stroke="url(#paint2_linear_0_806)"
-        stroke-opacity="0.34"
+        strokeOpacity="0.34"
         stroke-width="1.5"
       />
       <path

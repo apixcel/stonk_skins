@@ -4,14 +4,16 @@ import Faq from "@/components/Home/Faq";
 import HowItWorks from "@/components/Home/HowItWorks";
 import StartTrading from "@/components/Home/StartTrading";
 import Testimonials from "@/components/Home/Testimonials";
+import RenderVerticalStripe from "@/components/shared/ui/RenderVerticalStripe";
 import { categoryBaseProducts } from "@/mock/category";
 import Image from "next/image";
 
 const HomeView = () => {
   return (
-    <main className="bg-[#220c30] w-full overflow-x-hidden  max-w-[1440px] mx-auto">
+    <main className="bg-[#220c30] w-full overflow-hidden max-w-[1440px] mx-auto">
       <Banner />
       <div className="mt-[115px] relative">
+        <RenderVerticalStripe count={2} />
         <span className="w-[437px] aspect-square rounded-full glowGradient absolute top-[30%] left-[-137px] z-[1]" />
         <span className="w-[440px] aspect-square rounded-full glowGradient absolute top-[70%] right-[-189px] z-[1]" />
         <Image
@@ -47,10 +49,13 @@ const HomeView = () => {
           />
         </div>
       </div>
-      <HowItWorks />
-      <Testimonials />
-      <Faq />
-      <StartTrading />
+      <div className="w-full relative">
+        <RenderVerticalStripe count={3} />
+        <HowItWorks />
+        <Testimonials />
+        <Faq />
+        <StartTrading />
+      </div>
     </main>
   );
 };

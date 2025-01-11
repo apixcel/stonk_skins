@@ -2,11 +2,14 @@ import fonts from "@/fonts";
 import Image from "next/image";
 import Link from "next/link";
 import SearchbarShapeIcon from "../icons/SearchbarShapeIcon";
+import RenderVerticalStripe from "./ui/RenderVerticalStripe";
 
 const Footer = () => {
   const linkClass = `${fonts.dm_sans.className} text-secondary tracking-[-0.96px] leading-[125%] font-[500] `;
   return (
-    <footer>
+    <footer className="max-h-[285px] overflow-hidden relative max-w-[1440px] mx-auto">
+      <RenderVerticalStripe count={1} />
+
       <div className="mt-[113px] layout_container w-full flex items-start justify-between gap-[15px]">
         <div className="flex flex-col gap-[20px]">
           <Image
