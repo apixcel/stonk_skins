@@ -5,7 +5,7 @@ import LoginWithSteamShapeButton from "../shared/ui/LoginWithSteamShapeButton";
 
 const BannerSm = () => {
   return (
-    <div className="w-full min-h-[823px] relative overflow-hidden">
+    <div className="w-full min-h-[823px] relative overflow-hidden sm:hidden">
       <div className=" w-full h-full flex flex-col items-start justify-center  layout_container relative z-[3] bottom-[-40px]">
         <h1 className="text-white font-[500] text-[40px] leading-[140%] tracking-[-2.4px] max-w-[727px]">
           The Ultimate <span className="text-[#E9AE82]">CS 2 Marketplace</span>{" "}

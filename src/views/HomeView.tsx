@@ -19,21 +19,27 @@ const HomeView = () => {
         <span className="w-[437px] aspect-square rounded-full glowGradient absolute top-[30%] left-[-137px] z-[1]" />
         <span className="w-[440px] aspect-square rounded-full glowGradient absolute top-[70%] right-[-189px] z-[1]" />
         <Image
+          src={"/assets/images/category/rare_ornament.png"}
+          width={323}
+          height={84}
+          alt=""
+          className="absolute top-[-19px] sm:top-[-1%] left-[0%] z-[3]"
+        />
+        <Image
           src={"/assets/images/category/ornament_1.png"}
           width={325}
           height={57}
           alt=""
-          className="absolute top-[37%] left-[30%] z-[3]"
+          className="absolute top-[35%] sm:top-[37%] left-[38%] sm:left-[30%] z-[3]"
         />
         <Image
           src={"/assets/images/category/ornament_2.png"}
           width={325}
           height={57}
           alt=""
-          className="absolute top-[72%] left-[0%] z-[3]"
+          className="absolute top-[69%] sm:top-[72%] left-[-28%] sm:left-[0%] z-[3]"
         />
-
-        <div className="flex flex-col gap-[166px] relative z-[2]">
+        <div className="flex flex-col gap-[86px] sm:gap-[166px] relative z-[2]">
           <CategorySection
             categoryName="Category Name"
             data={categoryBaseProducts}

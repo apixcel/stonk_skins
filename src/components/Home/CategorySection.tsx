@@ -24,12 +24,12 @@ const CategorySection: React.FC<IProps> = ({
   const nextId = "next" + uniqueId;
   return (
     <div className="w-full">
-      <div className="layout_container flex items-center justify-between w-full mb-[31px]">
-        <h1 className="text-white text-[48px] font-[500] leading-[118%] tracking-[-2.88px]">
+      <div className="layout_container flex items-center justify-between w-full mb-[67px] sm:mb-[31px]">
+        <h1 className="text-white text-[40px] sm:text-[48px] font-[500] leading-[118%] tracking-[-2.88px]">
           {categoryName}
         </h1>
 
-        <div className="center gap-[11px]">
+        <div className="center gap-[11px] hidden sm:flex">
           <button id={prevId}>
             <PrevIcon />
           </button>
@@ -52,6 +52,10 @@ const CategorySection: React.FC<IProps> = ({
         loop={true}
         className="h-full w-full"
         breakpoints={{
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 20,
+          },
           640: {
             slidesPerView: 2,
             spaceBetween: 20,
@@ -71,7 +75,7 @@ const CategorySection: React.FC<IProps> = ({
         }}
       >
         {data.map((product, i) => (
-          <SwiperSlide key={product.id + i}>
+          <SwiperSlide key={product.id + i} className="!flex justify-center">
             <ProductCard product={product} />
           </SwiperSlide>
         ))}

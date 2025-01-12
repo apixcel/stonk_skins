@@ -7,7 +7,7 @@ const MenuIcon = () => {
       viewBox="0 0 20 21"
       fill="none"
     >
-      <g clip-path="url(#clip0_6_1758)">
+      <g clipPath="url(#clip0_6_1758)">
         <path
           fillRule="evenodd"
           clipRule="evenodd"
