@@ -1,4 +1,5 @@
 import Banner from "@/components/Home/Banner";
+import BannerSm from "@/components/Home/BannerSm";
 import CategorySection from "@/components/Home/CategorySection";
 import Faq from "@/components/Home/Faq";
 import HowItWorks from "@/components/Home/HowItWorks";
@@ -12,6 +13,7 @@ const HomeView = () => {
   return (
     <main className="bg-[#220c30] w-full overflow-hidden wrapper">
       <Banner />
+      <BannerSm />
       <div className="mt-[115px] relative">
         <RenderVerticalStripe count={2} />
         <span className="w-[437px] aspect-square rounded-full glowGradient absolute top-[30%] left-[-137px] z-[1]" />

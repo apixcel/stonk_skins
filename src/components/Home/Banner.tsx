@@ -5,7 +5,7 @@ import LoginWithSteamShapeButton from "../shared/ui/LoginWithSteamShapeButton";
 
 const Banner = () => {
   return (
-    <div className="w-full h-[823px] relative overflow-hidden">
+    <div className="w-full h-[823px] relative overflow-hidden hidden sm:block">
       <div
         className="w-full layout_container h-full relative"
         style={{

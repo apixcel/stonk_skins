@@ -1,12 +1,16 @@
 import HeaderBottom from "./HeaderBottom";
+import HeaderSm from "./HeaderSm";
 import HeaderTop from "./HeaderTop";
 
 const Header = () => {
   return (
-    <header className="w-full backdrop-blur-[5px] fixed top-0 left-0 z-[45]">
-      <div className="max-w-[1440px] mx-auto">
+    <header className="w-full sm:backdrop-blur-[5px] sm:fixed top-0 left-0 z-[45]">
+      <div className="max-w-[1440px] mx-auto hidden sm:block">
         <HeaderTop />
         <HeaderBottom />
+      </div>
+      <div className="max-w-[1440px] mx-auto block sm:hidden">
+        <HeaderSm />
       </div>
     </header>
   );
