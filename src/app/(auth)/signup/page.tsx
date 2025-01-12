@@ -1,11 +1,7 @@
-import React from 'react';
+import SingupView from "@/views/SingupView";
 
 const page = () => {
-    return (
-        <div>
-            
-        </div>
-    );
+  return <SingupView />;
 };
 
 export default page;
