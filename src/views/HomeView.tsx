@@ -10,7 +10,7 @@ import Image from "next/image";
 
 const HomeView = () => {
   return (
-    <main className="bg-[#220c30] w-full overflow-hidden max-w-[1440px] mx-auto">
+    <main className="bg-[#220c30] w-full overflow-hidden wrapper">
       <Banner />
       <div className="mt-[115px] relative">
         <RenderVerticalStripe count={2} />

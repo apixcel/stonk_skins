@@ -33,7 +33,7 @@ const AccordianArrowUp = () => {
         transform="rotate(-90 0.75 48.25)"
         stroke="url(#paint2_linear_0_806)"
         strokeOpacity="0.34"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <path
         d="M25.2071 13.1763C24.8166 12.7857 24.1834 12.7857 23.7929 13.1763L17.4289 19.5402C17.0384 19.9307 17.0384 20.5639 17.4289 20.9544C17.8195 21.345 18.4526 21.345 18.8431 20.9544L24.5 15.2976L30.1569 20.9544C30.5474 21.345 31.1805 21.345 31.5711 20.9544C31.9616 20.5639 31.9616 19.9307 31.5711 19.5402L25.2071 13.1763ZM25.5 35.1167L25.5 13.8834L23.5 13.8834L23.5 35.1167L25.5 35.1167Z"
@@ -48,8 +48,8 @@ const AccordianArrowUp = () => {
           y2="105.255"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E9AD83" />
-          <stop offset="1" stop-color="#9B1FE8" />
+          <stop stopColor="#E9AD83" />
+          <stop offset="1" stopColor="#9B1FE8" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_0_806"
@@ -59,8 +59,8 @@ const AccordianArrowUp = () => {
           y2="98"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#BEBEBE" />
-          <stop offset="0.84" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#BEBEBE" />
+          <stop offset="0.84" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint2_linear_0_806"
@@ -70,8 +70,8 @@ const AccordianArrowUp = () => {
           y2="98"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

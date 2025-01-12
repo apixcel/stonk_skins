@@ -7,6 +7,10 @@
     @apply max-w-[1148px] mx-auto px-[20px] xl:px-[0px];
   }
 
+  .wrapper {
+    @apply max-w-[1440px] mx-auto;
+  }
+
   .center {
     @apply flex justify-center items-center;
   }

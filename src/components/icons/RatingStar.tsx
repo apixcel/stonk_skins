@@ -25,8 +25,8 @@ const RatingStar = () => {
           y2="16.5729"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#E9AD83" />
-          <stop offset="1" stop-color="#9B1FE8" />
+          <stop stopColor="#E9AD83" />
+          <stop offset="1" stopColor="#9B1FE8" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_344_28"
@@ -36,8 +36,8 @@ const RatingStar = () => {
           y2="14.5"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#BEBEBE" />
-          <stop offset="0.84" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#BEBEBE" />
+          <stop offset="0.84" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

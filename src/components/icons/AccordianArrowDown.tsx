@@ -25,7 +25,7 @@ const AccordianArrowDown = () => {
         transform="rotate(90 48.25 0.75)"
         stroke="url(#paint1_linear_0_825)"
         strokeOpacity="0.34"
-        stroke-width="1.5"
+        strokeWidth="1.5"
       />
       <path
         d="M23.7929 35.8237C24.1834 36.2143 24.8166 36.2143 25.2071 35.8237L31.5711 29.4598C31.9616 29.0693 31.9616 28.4361 31.5711 28.0456C31.1805 27.655 30.5474 27.655 30.1569 28.0456L24.5 33.7024L18.8431 28.0456C18.4526 27.655 17.8195 27.655 17.4289 28.0456C17.0384 28.4361 17.0384 29.0693 17.4289 29.4598L23.7929 35.8237ZM23.5 13.8833L23.5 35.1166L25.5 35.1166L25.5 13.8833L23.5 13.8833Z"
@@ -40,8 +40,8 @@ const AccordianArrowDown = () => {
           y2="49"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="#BEBEBE" />
-          <stop offset="0.84" stop-color="white" stop-opacity="0" />
+          <stop stopColor="#BEBEBE" />
+          <stop offset="0.84" stopColor="white" stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint1_linear_0_825"
@@ -51,8 +51,8 @@ const AccordianArrowDown = () => {
           y2="49"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stop-color="white" />
-          <stop offset="1" stop-color="white" stop-opacity="0" />
+          <stop stopColor="white" />
+          <stop offset="1" stopColor="white" stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>

@@ -78,7 +78,7 @@ const HowItWorks = () => {
                       d="M67.295 34.5C67.295 53.1495 52.3886 68.25 34.0225 68.25C15.6564 68.25 0.75 53.1495 0.75 34.5C0.75 15.8505 15.6564 0.75 34.0225 0.75C52.3886 0.75 67.295 15.8505 67.295 34.5Z"
                       stroke="url(#paint2_linear_0_706)"
                       strokeOpacity="0.34"
-                      stroke-width="1.5"
+                      strokeWidth="1.5"
                     />
                     <defs>
                       <linearGradient
@@ -89,8 +89,8 @@ const HowItWorks = () => {
                         y2="34.5"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#E9AD83" />
-                        <stop offset="1" stop-color="#9B1FE8" />
+                        <stop stopColor="#E9AD83" />
+                        <stop offset="1" stopColor="#9B1FE8" />
                       </linearGradient>
                       <linearGradient
                         id="paint1_linear_0_706"
@@ -100,12 +100,8 @@ const HowItWorks = () => {
                         y2="69"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="#BEBEBE" />
-                        <stop
-                          offset="0.84"
-                          stop-color="white"
-                          stop-opacity="0"
-                        />
+                        <stop stopColor="#BEBEBE" />
+                        <stop offset="0.84" stopColor="white" stopOpacity="0" />
                       </linearGradient>
                       <linearGradient
                         id="paint2_linear_0_706"
@@ -115,8 +111,8 @@ const HowItWorks = () => {
                         y2="69"
                         gradientUnits="userSpaceOnUse"
                       >
-                        <stop stop-color="white" />
-                        <stop offset="1" stop-color="white" stop-opacity="0" />
+                        <stop stopColor="white" />
+                        <stop offset="1" stopColor="white" stopOpacity="0" />
                       </linearGradient>
                     </defs>
                   </svg>
