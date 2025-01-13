@@ -11,7 +11,7 @@ const RenderVerticalStripe = ({ count = 1 }: { count?: number }) => {
           width={1440}
           height={900}
           alt=""
-          className="w-full"
+          className="w-full sm:h-auto h-[769px]"
         />
       ))}
     </div>

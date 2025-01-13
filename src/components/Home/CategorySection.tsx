@@ -62,7 +62,7 @@ const CategorySection: React.FC<IProps> = ({
           },
           768: {
             slidesPerView: 3,
-            spaceBetween: 20,
+            spaceBetween: 15,
           },
           1024: {
             slidesPerView: 3,
@@ -70,6 +70,10 @@ const CategorySection: React.FC<IProps> = ({
           },
           1300: {
             slidesPerView: 3.8,
+            spaceBetween: 20,
+          },
+          1800: {
+            slidesPerView: 5,
             spaceBetween: 20,
           },
         }}

@@ -9,9 +9,9 @@ const Faq = () => {
 
   return (
     <div className="w-full relative">
-      <div className="layout_container w-full flex items-start justify-start gap-[0] mt-[173px] relative z-[5]">
-        <div className="w-[389px] shrink-0 flex flex-col gap-[12px]">
-          <h3 className="text-white text-[48px] font-[500] leading-[118%] tracking-[-2.88px]">
+      <div className="layout_container w-full flex items-start justify-start gap-[32px] sm:gap-[0] mt-[100px] sm:mt-[173px] relative z-[5] flex-col sm:flex-row">
+        <div className="w-[258px] sm:w-[389px] shrink-0 flex flex-col gap-[12px]">
+          <h3 className="text-white text-[32px] sm:text-[48px] font-[500] leading-[118%] tracking-[-2.88px]">
             Any Questions? Look Here
           </h3>
 
@@ -34,13 +34,13 @@ const Faq = () => {
         </div>
       </div>
 
-      <span className="w-[435px] aspect-square glowGradient absolute right-[-185px] top-[55px] rounded-full z-[1]" />
+      <span className="w-[300px] sm:w-[435px] aspect-square glowGradient absolute right-[-55px] sm:right-[-185px] top-[50%] sm:top-[55px] rounded-full z-[1]" />
       <Image
         src={"/assets/images/faq/faq_ornament.png"}
         width={274}
         height={396}
         alt={""}
-        className="absolute left-0 top-[-48px] z-[1]"
+        className="absolute left-0 top-[-48px] z-[1] hidden sm:block"
       />
     </div>
   );

@@ -104,6 +104,10 @@ const Testimonials = () => {
             slidesPerView: 3.8,
             spaceBetween: 22,
           },
+          1500: {
+            slidesPerView: 5,
+            spaceBetween: 22,
+          },
         }}
       >
         {/* Excellent Card */}
