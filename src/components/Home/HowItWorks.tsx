@@ -32,22 +32,25 @@ const HowItWorks = () => {
         alt=""
         width={457}
         height={147}
-        className={"absolute bottom-[88px] right-0 z-[3]"}
+        className={
+          "absolute bottom-[88px] right-0 z-[3] max-w-[168.7px] sm:max-w-[457px]"
+        }
       />
       <div className="center flex-col gap-[22px] w-full h-full relative z-[4]">
         <h2 className="text-white font-[500] text-center text-[48px] leading-[118%] tracking-[-2.88px]">
           How It Works
         </h2>
-        <div className="w-[1140px] mx-auto flex items-start justify-between gap-[15px] relative">
-          <span className="absolute top-[18%] left-[15%] h-[1px] w-[810px] border-[1px] border-dashed border-[#ffffff4f]" />
+        <div className="max-w-[330px] sm:max-w-[unset] sm:w-[1140px] mx-auto flex flex-col sm:flex-row items-start justify-between sm:gap-[15px] gap-[56px] relative">
+          <span className="absolute top-[18%] left-[15%] h-[1px] w-[810px] border-[1px] border-dashed border-[#ffffff4f] hidden sm:block" />
+          <span className="absolute top-[10%] left-[10%] h-[315px] w-[1px] border-[1px] border-dashed border-[#ffffff4f] sm:hidden" />
           {howItWorksData.map(({ description, label }, i) => {
             const descriptIonWidhts = [250, 324, 250];
             return (
               <div
                 key={i + "work"}
-                className="flex flex-col items-center gap-[25px]"
+                className="flex sm:flex-col items-start sm:items-center gap-[25px]"
               >
-                <span className="w-[69px] aspect-square rounded-full center relative">
+                <span className="shrink-0 w-[69px] aspect-square rounded-full center relative">
                   <span className="relative z-[2] text-white text-[32px] font-[500] leading-[118%] tracking-[-1.92px]">
                     0{i + 1}
                   </span>
@@ -117,13 +120,13 @@ const HowItWorks = () => {
                     </defs>
                   </svg>
                 </span>
-                <div className={`flex flex-col gap-[4px]`}>
-                  <h3 className="text-white text-center text-[32px] font-[500] leading-[118%] tracking-[-1.92px]">
+                <div className={`flex flex-col gap-[29px] sm:gap-[4px]`}>
+                  <h3 className="text-white sm:text-center text-[24px] sm:text-[32px] font-[500] leading-[118%] tracking-[-1.92px]">
                     {label}
                   </h3>
 
                   <p
-                    className={`${fonts.dm_sans.className} text-secondary text-[16px] text-center leading-[125%] tracking-[-0.096px] font-[500]`}
+                    className={`${fonts.dm_sans.className} text-secondary text-[16px] sm:text-center leading-[125%] tracking-[-0.096px] font-[500]`}
                     style={{ maxWidth: descriptIonWidhts[i] + "px" }}
                   >
                     {description}
