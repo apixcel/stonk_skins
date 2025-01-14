@@ -13,9 +13,7 @@ import Image from "next/image";
 const HomeView = () => {
   return (
     <main className="bg-[#220c30] w-full overflow-hidden wrapper">
-
-
-{/* ❓❓ wondering why this is here? answer: i got a weird problem with the login button if i dont put this here the button svg dont appear on the other section in smaller screen. idk  what the problem was */}
+      {/* ❓❓ wondering why this is here? answer: i got a weird problem with the login button if i dont put this here the button svg dont appear on the other section in smaller screen. idk  what the problem was */}
       <div className="invisible w-0 h-0 overflow-hidden">
         <LoginWithSteamShapeButton />
       </div>
@@ -47,21 +45,24 @@ const HomeView = () => {
           alt=""
           className="absolute top-[69%] sm:top-[72%] left-[-28%] sm:left-[0%] z-[3]"
         />
-        <div className="flex flex-col gap-[86px] sm:gap-[166px] relative z-[2]">
+        <div className="flex flex-col gap-[86px] sm:gap-[166px] relative z-[2] ">
           <CategorySection
             categoryName="Category Name"
             data={categoryBaseProducts}
             uniqueId={"1"}
+            className="pl-[20px] xl:pl-[50px]"
           />
           <CategorySection
             categoryName="Category Name"
             data={categoryBaseProducts}
             uniqueId="2"
+            className="pr-[20px] xl:pr-[50px]"
           />
           <CategorySection
             categoryName="Category Name"
             data={categoryBaseProducts}
             uniqueId="3"
+            className="px-[20px] xl:px-[50px]"
           />
         </div>
       </div>
