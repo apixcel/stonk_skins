@@ -13,12 +13,14 @@ interface IProps {
   categoryName: string;
   data: IProduct[];
   uniqueId: string;
+  className?: string;
 }
 
 const CategorySection: React.FC<IProps> = ({
   categoryName,
   data,
   uniqueId,
+  className,
 }) => {
   const prevId = "prev" + uniqueId;
   const nextId = "next" + uniqueId;
@@ -38,52 +40,54 @@ const CategorySection: React.FC<IProps> = ({
           </button>
         </div>
       </div>
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation={{
-          prevEl: `#${prevId}`,
-          nextEl: `#${nextId}`,
-        }}
-        // pagination={{ clickable: true }}
-        autoplay={{
-          delay: 3000,
-          pauseOnMouseEnter: true,
-        }}
-        loop={true}
-        className="h-full w-full"
-        breakpoints={{
-          320: {
-            slidesPerView: 1.2,
-            spaceBetween: 20,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 15,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1300: {
-            slidesPerView: 3.8,
-            spaceBetween: 20,
-          },
-          1800: {
-            slidesPerView: 5,
-            spaceBetween: 20,
-          },
-        }}
-      >
-        {data.map((product, i) => (
-          <SwiperSlide key={product.id + i} className="!flex justify-center">
-            <ProductCard product={product} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+      <div className={`w-full ${className || ""}`}>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          navigation={{
+            prevEl: `#${prevId}`,
+            nextEl: `#${nextId}`,
+          }}
+          // pagination={{ clickable: true }}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+          }}
+          loop={true}
+          className="h-full w-full"
+          breakpoints={{
+            320: {
+              slidesPerView: 1.2,
+              spaceBetween: 20,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 20,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 15,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1300: {
+              slidesPerView: 3.8,
+              spaceBetween: 20,
+            },
+            1800: {
+              slidesPerView: 5,
+              spaceBetween: 20,
+            },
+          }}
+        >
+          {data.map((product, i) => (
+            <SwiperSlide key={product.id + i} className="!flex justify-center">
+              <ProductCard product={product} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };

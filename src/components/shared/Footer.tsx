@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <footer className=" overflow-hidden relative">
       <RenderVerticalStripe count={1} />
-      <div className="max-w-[1440px] mx-auto">
+      <div className="mx-auto">
         <div className="mt-[113px] layout_container w-full flex items-start justify-between gap-[32px] flex-col sm:flex-row sm:flex-nowrap flex-wrap">
           <div className="flex flex-col gap-[20px]">
             <Image
