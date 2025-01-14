@@ -44,14 +44,20 @@ const HeaderTop = () => {
         </Link>
 
         <div className="flex items-center gap-[11px]">
-          <button className="center w-[123px] h-[51px] relative text-secondary text-[16px] font-[500] leading-[125%] tracking-[-0.096px]">
+          <Link
+            href={"/singup"}
+            className="center w-[123px] h-[51px] relative text-secondary text-[16px] font-[500] leading-[125%] tracking-[-0.096px]"
+          >
             <ButtonCta className="w-[123px] h-[51px] absolute left-0 top-0 fill-secondaryBg stroke-[1.5px] z-[1]" />
             Sign Up
-          </button>
-          <button className="center w-[187px] h-[51px] relative text-secondary text-[16px] font-[500] leading-[125%] tracking-[-0.096px]">
+          </Link>
+          <Link
+            href={"/login"}
+            className="center w-[187px] h-[51px] relative text-secondary text-[16px] font-[500] leading-[125%] tracking-[-0.096px]"
+          >
             <ButtonUnionIcon className="w-[187px] h-[51px] absolute left-0 top-0 fill-secondaryBg stroke-[1.5px] z-[1]" />
             <span className="relative z-[2]">Login with Steam</span>{" "}
-          </button>
+          </Link>
         </div>
       </div>
     </div>

@@ -1,13 +1,18 @@
+"use client";
 import ArrowAngelUp from "@/components/icons/ArrowAngelUp";
 import fonts from "@/fonts";
+import { useRouter } from "next/navigation";
 const LoginWithSteamShapeButton = ({ className }: { className?: string }) => {
+  const router = useRouter();
+  const handleGoToLogin = () => router.push("/login");
   return (
     <button
+      onClick={handleGoToLogin}
       className={`relative w-[245px] h-[52px] text-secondary font-[500] text-[16px] leading-[125%] tracking-[-0.096px] ${
         fonts.dm_sans.className
       } ${className || ""}`}
     >
-      <span className="relative z-[2] flex items-center justify-between w-full h-full pl-[34px]">
+      <span className="relative z-[55] flex items-center justify-between w-full h-full pl-[34px]">
         Login with Steam
         <span className="center w-[52px] h-[52px]">
           <ArrowAngelUp />
@@ -19,7 +24,7 @@ const LoginWithSteamShapeButton = ({ className }: { className?: string }) => {
         height="52"
         viewBox="0 0 245 52"
         fill="none"
-        className="absolute top-0 left-0 z-[1]"
+        className="absolute top-0 left-0 z-[54]"
       >
         <mask id="path-1-inside-1_0_344" fill="white">
           <path

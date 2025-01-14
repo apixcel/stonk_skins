@@ -5,6 +5,7 @@ import Faq from "@/components/Home/Faq";
 import HowItWorks from "@/components/Home/HowItWorks";
 import StartTrading from "@/components/Home/StartTrading";
 import Testimonials from "@/components/Home/Testimonials";
+import LoginWithSteamShapeButton from "@/components/shared/ui/LoginWithSteamShapeButton";
 import RenderVerticalStripe from "@/components/shared/ui/RenderVerticalStripe";
 import { categoryBaseProducts } from "@/mock/category";
 import Image from "next/image";
@@ -12,6 +13,13 @@ import Image from "next/image";
 const HomeView = () => {
   return (
     <main className="bg-[#220c30] w-full overflow-hidden wrapper">
+
+
+{/* ❓❓ wondering why this is here? answer: i got a weird problem with the login button if i dont put this here the button svg dont appear on the other section in smaller screen. idk  what the problem was */}
+      <div className="invisible w-0 h-0 overflow-hidden">
+        <LoginWithSteamShapeButton />
+      </div>
+
       <Banner />
       <BannerSm />
       <div className="mt-[115px] relative">

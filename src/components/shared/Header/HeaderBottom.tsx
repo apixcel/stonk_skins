@@ -3,6 +3,7 @@ import fonts from "@/fonts";
 import { categoryData } from "@/mock/category";
 import { ICategory, ISubCategory } from "@/types/category";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 const HeaderBottom = () => {
   const [selectedCategory, setSelectedCategory] = useState<
@@ -77,17 +78,18 @@ const HeaderBottom = () => {
 
               <div className="flex items-start justify-start gap-[26px]">
                 {selectedSubCategory?.products?.map((product, index) => (
-                  <div
+                  <Link
+                    href={"#"}
                     key={index + "product"}
-                    className="flex flex-col gap-[17px]"
+                    className="flex flex-col gap-[17px] border-t-[1.5px] border-x-[1.5px] p-[8px] rounded-[8px] cursor-pointer hover:border-borderPrimary border-transparent group/product"
                   >
-                    <div className="w-[115px] h-[73.143px] bg-[#1C0829] rounded-[14.69px]">
+                    <div className="w-[115px] h-[73.143px] bg-[#1C0829] rounded-[14.69px] overflow-hidden">
                       <Image
                         src={product.image}
                         alt={product.productName}
                         width={115}
                         height={73}
-                        className="object-contain w-full h-full"
+                        className="object-contain w-full h-full group-hover/product:scale-[1.2] transition-all duration-300"
                       />
                     </div>
 
@@ -100,7 +102,7 @@ const HeaderBottom = () => {
                         From ${product.suggestedPrice.toFixed(2)}
                       </p>
                     </div>
-                  </div>
+                  </Link>
                 ))}
               </div>
             </div>

@@ -31,7 +31,7 @@ const Banner = () => {
           <LoginWithSteamShapeButton className="mt-[57px]" />
         </div>
 
-        <div className="absolute bottom-0 left-0 w-full border-x-[1px] border-t-[1px] border-borderPrimary backdrop-blur-[25px] bg-secondaryBg px-[32px] py-[28px] flex items-center justify-start gap-[70px] z-[50] rounded-[24px]">
+        <div className="absolute bottom-0 max-w-[1148px] w-full left-[50%] translate-x-[-50%] border-x-[1px] border-t-[1px] border-borderPrimary backdrop-blur-[25px] bg-secondaryBg px-[32px] py-[28px] flex items-center justify-center gap-[70px] z-[50] rounded-[24px]">
           {serviceData.map(({ Icon, label }, i) => (
             <div
               key={i + label}
@@ -60,7 +60,7 @@ const Banner = () => {
         {/* brand ambassador */}
         <Image
           src={"/assets/images/hero/brand_ambassador.png"}
-          className="absolute bottom-[86px] right-[-83px] z-[30]"
+          className="absolute bottom-[0px] right-[-83px] z-[30]"
           alt="stonk skins"
           width={445}
           height={531}

@@ -59,7 +59,7 @@ const Testimonials = () => {
           Testimonials
         </h1>
 
-        <div className="center gap-[11px] hidden sm:flex">
+        <div className="center gap-[11px] hidden sm:flex relative  z-[55]">
           <button id="testimonials-prev">
             <PrevIcon />
           </button>
@@ -71,63 +71,63 @@ const Testimonials = () => {
       <div className="flex sm:hidden w-fit mx-auto mb-[33px]">
         <Certificate />
       </div>
-      <Swiper
-        modules={[Navigation, Pagination, Autoplay]}
-        navigation={{
-          prevEl: `#testimonials-prev`,
-          nextEl: `#testimonials-next`,
-        }}
-        autoplay={{
-          delay: 3000,
-          pauseOnMouseEnter: true,
-        }}
-        loop={true}
-        className="h-full w-full"
-        breakpoints={{
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 18,
-          },
-          640: {
-            slidesPerView: 2,
-            spaceBetween: 22,
-          },
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 22,
-          },
-          1024: {
-            slidesPerView: 3,
-            spaceBetween: 20,
-          },
-          1300: {
-            slidesPerView: 3.8,
-            spaceBetween: 22,
-          },
-          1500: {
-            slidesPerView: 5,
-            spaceBetween: 22,
-          },
-        }}
-      >
-        {/* Excellent Card */}
-        <SwiperSlide
-          key="excellent-card"
-          className="!hidden sm:!flex items-start justify-end"
+      <div className="flex items-center justify-start gap-[20px]">
+        <div
+          className="hidden sm:flex w-fit mx-auto shrink-0
+        "
         >
           <Certificate />
-        </SwiperSlide>
-
-        {/* Review Cards */}
-        {reviewData.map((review, index) => (
-          <SwiperSlide
-            key={`review-card-${index}`}
-            className="!flex justify-center"
-          >
-            <ReviewCard review={review} />
-          </SwiperSlide>
-        ))}
-      </Swiper>
+        </div>
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          navigation={{
+            prevEl: `#testimonials-prev`,
+            nextEl: `#testimonials-next`,
+          }}
+          autoplay={{
+            delay: 3000,
+            pauseOnMouseEnter: true,
+          }}
+          loop={true}
+          className="h-full w-full"
+          breakpoints={{
+            320: {
+              slidesPerView: 1,
+              spaceBetween: 18,
+            },
+            640: {
+              slidesPerView: 2,
+              spaceBetween: 22,
+            },
+            768: {
+              slidesPerView: 3,
+              spaceBetween: 22,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 20,
+            },
+            1300: {
+              slidesPerView: 3.8,
+              spaceBetween: 22,
+            },
+            1500: {
+              slidesPerView: 5,
+              spaceBetween: 22,
+            },
+          }}
+        >
+          {/* Review Cards */}
+          {reviewData.map((review, index) => (
+            <SwiperSlide
+              key={`review-card-${index}`}
+              className="!flex justify-center"
+            >
+              <ReviewCard review={review} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </div>
     </div>
   );
 };
