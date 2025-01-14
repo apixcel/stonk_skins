@@ -9,12 +9,14 @@ const HeaderTop = () => {
   return (
     <div className="layout_container pb-[16px] pt-[12px] border-b-[1px] border-borderPrimary flex items-center justify-between gap-[15px]">
       <div className="flex items-center justify-start gap-[31px]">
-        <Image
-          src={"/assets/svg/logo.svg"}
-          width={116}
-          height={55}
-          alt={"stonk skins"}
-        />
+        <Link href={"/"}>
+          <Image
+            src={"/assets/svg/logo.svg"}
+            width={116}
+            height={55}
+            alt={"stonk skins"}
+          />
+        </Link>
 
         <div className="relative w-[320px] h-[52px]">
           <SearchbarShapeIcon className="absolute top-0 left-0 z-[1]" />
