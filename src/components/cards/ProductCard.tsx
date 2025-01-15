@@ -11,7 +11,7 @@ interface IProps {
 
 const ProductCard: React.FC<IProps> = ({ product }) => {
   return (
-    <div className="p-[12px] pb-[26px] w-[369px] rounded-[24px] border-x-[1.5px] border-t-[1.5px] border-borderPrimary bg-secondaryBg backdrop-blur-[25px] relative">
+    <div className="p-[12px] pb-[26px] w-[369px] rounded-[24px] border-x-[1.5px] border-t-[1.5px] border-borderPrimary bg-secondaryBg backdrop-blur-[25px] relative cursor-pointer">
       <div className="w-full h-[221px] bg-[#1C0829] center">
         <Image
           src={product.image}

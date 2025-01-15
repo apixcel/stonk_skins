@@ -15,7 +15,7 @@ const Banner = () => {
           backgroundRepeat: "no-repeat",
         }}
       >
-        <div className="relative z-[11] w-full h-full flex flex-col items-start justify-center">
+        <div className="relative z-[11] h-full flex flex-col items-start justify-center">
           <h1 className="text-white font-[500] text-[64px] leading-[118%] tracking-[-3.84px] max-w-[727px]">
             The Ultimate{" "}
             <span className="text-[#E9AE82]">CS 2 Marketplace</span> for Gamers
@@ -30,31 +30,32 @@ const Banner = () => {
 
           <LoginWithSteamShapeButton className="mt-[57px]" />
         </div>
-
-        <div className="absolute bottom-0 max-w-[1148px] w-full left-[50%] translate-x-[-50%] border-x-[1px] border-t-[1px] border-borderPrimary backdrop-blur-[25px] bg-secondaryBg px-[32px] py-[28px] flex items-center justify-center gap-[70px] z-[50] rounded-[24px]">
-          {serviceData.map(({ Icon, label }, i) => (
-            <div
-              key={i + label}
-              className="flex items-center justify-start gap-[16px]"
-            >
-              <span className="w-[60px] h-[60px] relative center">
-                <Icon className={"relative top-0 left-0 z-[2]"} />
-                <Image
-                  src={"/assets/images/hero/iconBox.png"}
-                  alt=""
-                  width={60}
-                  height={60}
-                  className="w-full h-full left-0 top-0 absolute z-[1]"
-                />
-              </span>
-
-              <span
-                className={`${fonts.dm_sans.className} text-secondary text-[16px] leading-[125%] tracking-[-0.096px]`}
+        <div className="relative layout_container">
+          <div className="absolute inset-x-0 bottom-0 w-full mx-auto border-x-[1px] border-t-[1px] border-borderPrimary backdrop-blur-[25px] bg-secondaryBg px-[32px] py-[28px] flex items-center justify-center gap-[10px] lg:gap-[70px] z-[50] rounded-[24px]">
+            {serviceData.map(({ Icon, label }, i) => (
+              <div
+                key={i + label}
+                className="flex items-center justify-start gap-[16px]"
               >
-                {label}
-              </span>
-            </div>
-          ))}
+                <span className="w-[60px] h-[60px] relative center">
+                  <Icon className={"relative top-0 left-0 z-[2]"} />
+                  <Image
+                    src={"/assets/images/hero/iconBox.png"}
+                    alt=""
+                    width={60}
+                    height={60}
+                    className="w-full h-full left-0 top-0 absolute z-[1]"
+                  />
+                </span>
+
+                <span
+                  className={`${fonts.dm_sans.className} text-secondary text-[16px] leading-[125%] tracking-[-0.096px]`}
+                >
+                  {label}
+                </span>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* brand ambassador */}
