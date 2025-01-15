@@ -71,7 +71,7 @@ const Testimonials = () => {
       <div className="flex sm:hidden w-fit mx-auto mb-[33px]">
         <Certificate />
       </div>
-      <div className="flex items-center justify-start gap-[20px] pl-[20px] xl:pl-[50px]">
+      <div className="flex items-center justify-start gap-[20px] pl-[20px] xl:pl-[90px]">
         <div
           className="hidden sm:flex w-fit mx-auto shrink-0
         "

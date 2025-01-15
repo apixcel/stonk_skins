@@ -50,19 +50,19 @@ const HomeView = () => {
             categoryName="Category Name"
             data={categoryBaseProducts}
             uniqueId={"1"}
-            className="pl-[20px] xl:pl-[50px]"
+            className="pl-[20px] xl:pl-[90px]"
           />
           <CategorySection
             categoryName="Category Name"
             data={categoryBaseProducts}
             uniqueId="2"
-            className="pr-[20px] xl:pr-[50px]"
+            className="pr-[20px] xl:pr-[90px]"
           />
           <CategorySection
             categoryName="Category Name"
             data={categoryBaseProducts}
             uniqueId="3"
-            className="px-[20px] xl:px-[50px]"
+            className="px-[20px] xl:px-[90px]"
           />
         </div>
       </div>

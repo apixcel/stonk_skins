@@ -4,7 +4,7 @@ import HeaderTop from "./HeaderTop";
 
 const Header = () => {
   return (
-    <header className="w-full sm:backdrop-blur-[5px] sm:fixed top-0 left-0 z-[45]">
+    <header className="w-full sm:backdrop-blur-[5px] sm:fixed top-0 left-0 z-[55]">
       <div className="hidden sm:block">
         <HeaderTop />
         <HeaderBottom />
